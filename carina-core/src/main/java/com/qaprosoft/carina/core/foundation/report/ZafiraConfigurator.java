@@ -151,9 +151,4 @@ public class ZafiraConfigurator implements IConfigurator {
         return Artifacts.getArtifacts();
     }
 
-    @Override
-    public String getReportEmails() {
-        Assert.fail("remove this method!");
-        return null;
-    }
 }
