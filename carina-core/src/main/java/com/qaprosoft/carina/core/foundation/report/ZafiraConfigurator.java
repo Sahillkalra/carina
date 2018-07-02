@@ -20,6 +20,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 import org.testng.ISuite;
 import org.testng.ITestResult;
 
@@ -28,7 +29,6 @@ import com.qaprosoft.carina.core.foundation.jira.Jira;
 import com.qaprosoft.carina.core.foundation.performance.Timer;
 import com.qaprosoft.carina.core.foundation.report.testrail.TestRail;
 import com.qaprosoft.carina.core.foundation.retry.RetryCounter;
-import com.qaprosoft.carina.core.foundation.utils.Configuration;
 import com.qaprosoft.carina.core.foundation.utils.Configuration.Parameter;
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.naming.TestNamingUtil;
@@ -153,7 +153,7 @@ public class ZafiraConfigurator implements IConfigurator {
 
     @Override
     public String getReportEmails() {
-        // This code is invoked only from ZafiraListener i.e. Zafira integration is already enabled!
-        return Configuration.get(Parameter.EMAIL_LIST);
+        Assert.fail("remove this method!");
+        return null;
     }
 }

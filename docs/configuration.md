@@ -90,21 +90,6 @@ All project configuration properties are located in **_config.properties** file.
 		<td>https://jira.carina.com/browse/</td>
 	</tr>
 	<tr>
-		<td>email_list</td>
-		<td>Comma-separated list of emails for reports</td>
-		<td>u1@gmail.com,u2@gmail.com</td>
-	</tr>
-	<tr>
-		<td>sender_email</td>
-		<td>Email account for reports sending. <br><b>Note:</b> Gmail smtp settings are used by default. Update _email.properties to use your own SMTP server</td>
-		<td>carina.qareport@qaprosoft.com</td>
-	</tr>
-	<tr>
-		<td>sender_pswd</td>
-		<td>Email password for reports sending</td>
-		<td>pwd123</td>
-	</tr>
-	<tr>
 		<td>env</td>
 		<td>Environment specific configuration. More about this [feature](#environment-specific-configuration)</td>
 		<td>STAG, PROD, DEMO</td>
